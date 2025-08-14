@@ -1,9 +1,127 @@
-<html>
-  <head>
-    <title>Welcome to Ben's Website</title>
-  </head>
-  <body>
-    <h1> Here you can learn about my serious lack of projects</h1>
-    <p>Here they are: </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ben Slavish - GitHub</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background-color: #f6f8fa;
+      color: #24292e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #24292e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #e1e4e8;
+      padding-bottom: 0.5rem;
+    }
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    .project-list li {
+      background: white;
+      border: 1px solid #d1d5da;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .project-list li:hover {
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+    a.project-link {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.project-link:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #586069;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ben Slavish</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Ben</h2>
+      <p>
+        Hi! I’m Ben Slavish, a developer passionate about building practical and elegant solutions. I enjoy collaborating on open-source projects and constantly improving my skills.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <a href="https://github.com/ben-slavish/project1" class="project-link" target="_blank" rel="noopener noreferrer">
+            Project One
+          </a>
+          <p>A web application built with React that streamlines task management.</p>
+        </li>
+        <li>
+          <a href="https://github.com/ben-slavish/project2" class="project-link" target="_blank" rel="noopener noreferrer">
+            Project Two
+          </a>
+          <p>An API service for secure user authentication and data handling.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:ben.slavish@example.com">ben.slavish@example.com</a></p>
+      <p>Find me on <a href="https://github.com/ben-slavish" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Ben Slavish. All rights reserved.
+  </footer>
+</body>
 </html>
